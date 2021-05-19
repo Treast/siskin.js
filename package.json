@@ -1,0 +1,27 @@
+{
+  "name": "siskin.js",
+  "version": "1.0.0",
+  "description": "A simple template generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "siskin": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Treast/siskin.js.git"
+  },
+  "keywords": [
+    "template",
+    "template",
+    "generator"
+  ],
+  "author": "Vincent Riva <vincent.riva@outlook.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Treast/siskin.js/issues"
+  },
+  "homepage": "https://github.com/Treast/siskin.js#readme"
+}
