@@ -39,7 +39,9 @@ console.log('Hello $__0__$');
 
 - Run the command-line
 
-`siskin example World`
+```node
+siskin example World
+```
 
 Here, our `$__0__$` will be replaced by our first argument, in this cas `World`. You can have any number of arguments & placeholders, you just have to increment the number (`$__1__$`, `$__2__$` and so on...).
 
