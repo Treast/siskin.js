@@ -68,12 +68,12 @@ const replaceVariables = (string) => {
   variables.forEach((variable, index) => {
     let v = variable;
 
-    if (localTransformations[index + 1]) {
-      v = localTransformations[index + 1](variables);
-      localTransformations.splice(index + 1, 1);
+    if (localTransformations && localTransformations[index]) {
+      v = localTransformations[index](variables);
+      delete localTransformations[index];
     }
 
-    s = s.replace(new RegExp(`\\$__${index + 1}__\\$`, 'gm'), v);
+    s = s.replace(new RegExp(`\\$__${index}__\\$`, 'gm'), v);
   });
 
   Object.entries(localTransformations).forEach(([key, transformation]) => {
