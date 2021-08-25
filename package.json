@@ -1,6 +1,6 @@
 {
   "name": "siskin.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple template generator",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "keywords": [
     "template",
-    "template",
+    "template generator",
     "generator"
   ],
   "author": "Vincent Riva <vincent.riva@outlook.fr>",

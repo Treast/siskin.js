@@ -36,9 +36,10 @@ const execConfigFile = (data) => {
         const fileNameReplaced = replaceVariables(fileName);
 
         const toFilePath = path.join(CWD, file.to);
-        const toFile = path.join(toFilePath, fileNameReplaced);
+        const toFilePathReplaced = replaceVariables(toFilePath);
+        const toFile = path.join(toFilePathReplaced, fileNameReplaced);
 
-        fs.mkdirSync(toFilePath, { recursive: true });
+        fs.mkdirSync(toFilePathReplaced, { recursive: true });
 
         fs.copyFileSync(fromFile, toFile);
 
